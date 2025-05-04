@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Jade's Pawfect Care</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1 class="site-title">Jade's Pawfect Care</h1>
+        <nav>
+            <ul>
+                <li><a href="index2.html"><button>Home</button></a></li>
+                <li><a href="contactus.html"><button>Contact</button></a></li>
+                <li><a href="about.html"><button>About Us</button></a></li>
+                <li><a href= "addtocart.html" ><button>Cart</button></a></li>
+                <li><button onclick="logout()">Log Out</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>About Jade's Pawfect Care</h1>
+            <h2>Dedicated in making each fury pal happy.</h2>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Our Story</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <h3>How We Started</h3>
+                <p>
+                    Jade's Pawfect Care was born out of a deep love for animals and a dream to make quality pet care more accessible.
+                    What began as a small home-based pet treat business in early 2024 quickly grew into a full-service online shop for
+                    everything from nutritious food to stylish accessories. Inspired by our own pets, we committed to providing only the
+                    safest and most joyful products to our fellow pet parents.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>Our Mission</h3>
+                <p>
+                    To create a trusted space where pets are treated like family. We aim to deliver high-quality products that support
+                    happy, healthy, tail-wagging lives. Every item we offer is carefully selected for its safety, quality, and joy factor.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>Our Vision</h3>
+                <p>
+                    We envision a world where every pet feels loved, cared for, and pampered. Jade’s Pawfect Care strives to be a
+                    go-to destination for pet lovers across the country — not just for shopping, but for support, education, and community.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Jade's Pawfect Care. All Rights Reserved.</p>
+    </footer>
+    <script>
+        function logout() {
+          const confirmLogout = confirm("Are you sure you want to log out?");
+          if (confirmLogout) {
+            window.location.href = "index.html"; 
+          }
+        }
+    </script>
+</body>
+</html>

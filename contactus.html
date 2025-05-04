@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Jade's Pawfect Care</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1 class="site-title">Jade's Pawfect Care</h1>
+        <nav>
+            <ul>
+                <li><a href="index2.html"><button>Home</button></a></li>
+                <li><a href="contactus.html"><button>Contact</button></a></li>
+                <li><a href="about.html"><button>About Us</button></a></li>
+                <li><a href= "addtocart.html" ><button>Cart</button></a></li>
+                <li><button onclick="logout()">Log Out</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Contact Us</h1>
+            <h2>We're here to help — reach out anytime!</h2>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>How to Reach Us</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <h3>Phone & Email</h3>
+                <p><strong>Mobile:</strong> 0917-123-4567</p>
+                <p><strong>Landline:</strong> (02) 8123-4567</p>
+                <p><strong>Email:</strong> support@pawfectcare.ph</p>
+            </div>
+
+            <div class="feature">
+                <h3>Social Media</h3>
+                <p><strong>Instagram:</strong> <a href="https://instagram.com/jadespawfectcare" target="_blank">@jadespawfectcare</a></p>
+                <p><strong>Facebook:</strong> <a href="https://facebook.com/jadespawfectcare" target="_blank">fb.com/jadespawfectcare</a></p>
+            </div>
+
+            <div class="feature">
+                <h3>Visit Us</h3>
+                <p><strong>Parañaque City:</strong><br>
+                123 Pet Street, BF Homes, Parañaque</p>
+
+                <p><strong>Makati City:</strong><br>
+                456 Furry Lane, Legazpi Village, Makati</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Jade's Pawfect Care. All Rights Reserved.</p>
+    </footer>
+    <script>
+        function logout() {
+          const confirmLogout = confirm("Are you sure you want to log out?");
+          if (confirmLogout) {
+            window.location.href = "index.html"; 
+          }
+        }
+    </script>
+</body>
+</html>

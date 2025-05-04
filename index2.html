@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jade's Pawfect Care</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+       <h1 class="site-title">Jade's Pawfect Care</h1>
+        <nav>
+            <ul>
+                <li><a href="index2.html"><button>Home</button></a></li>
+                <li><a href="contactus.html"><button>Contact</button></a></li>
+                <li><a href="about.html"><button>About Us</button></a></li>
+                <li><a href= "addtocart.html" ><button>Cart</button></a></li>
+                <li><button onclick="logout()">Log Out</button></li>
+
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-text">
+            <h1>"Treat" your fur pals now!</h1>
+            <h2>From yummy treats to outfits, <br> we have everything you need!</h2>
+           
+        </div>
+        <img src="luna.png" alt="Dog Winking"/>
+    </section>
+    
+    <section class="features">
+        <h2>We Offer: </h2>
+        <div class="feature-grid">
+            <div class="feature">
+                
+                <img src="pngegg.png" alt="kibbles"/>
+                <h3>Dog Kibbles</h3>
+                
+                
+            </div>
+            <div class="feature">
+                
+                <img src="pngegg(1).png" alt="costumes"/>
+                <h3>Accessories & Costumes</h3>
+              
+                
+            </div>
+            <div class="feature">
+                
+                <img src="pngegg(2).png" alt="treats"/>
+                <h3>Treats & Vitamins</h3>
+               
+                
+            </div>
+        </div>
+    </section>
+    <script>
+        function logout() {
+          const confirmLogout = confirm("Are you sure you want to log out?");
+          if (confirmLogout) {
+            window.location.href = "index.html"; 
+          }
+        }
+      </script>
+      
+</body>
+</html>

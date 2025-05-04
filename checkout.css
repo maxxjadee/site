@@ -1,0 +1,60 @@
+body {
+    background-color: #fdf3a1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .payment-container {
+    background-color: #fff2a6;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 400px;
+  }
+  
+  .payment-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 1px #999;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .section {
+    margin-bottom: 1.2rem;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  input[type="radio"] {
+    margin-right: 0.5rem;
+  }
+  
+  .continue-btn {
+    padding: 0.7rem;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+  }
+  
+  .continue-btn:hover {
+    background-color: #222;
+  }
+  

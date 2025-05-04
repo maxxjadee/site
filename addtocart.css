@@ -1,0 +1,239 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: white; 
+}
+
+header {
+  color: black;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav ul li button::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+nav ul li button:hover::after {
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 1.5rem;
+}
+.hero {
+  background: #f2e175;
+  color: black;
+  padding: 30px;
+  max-height: 650px;
+  position: reltive;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  width: 500px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  font-size: 2.5rem; 
+  font-weight: bold;
+  color: black;
+  margin: 0;
+  padding: 0;}
+
+.hero h2 {
+  font-size: 1.2rem;
+  margin: 0 auto 2rem;
+}
+.hero-text {
+   max-width: 500px;
+}
+
+.hero img {
+   max-width: 400px; 
+   height: auto;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  background-image: url('pngwing.com.png');
+  background-color: #f2e175;
+  padding: 20px;
+  background-repeat: repeat;
+  background-size: 265px;
+}
+
+main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white; 
+  opacity: 0.5; 
+  z-index: -1;
+}
+
+.bestsellers h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 12px;
+  width: 160px;
+  text-align: center;
+  cursor: grab;
+  margin-top: 10px;
+  margin-left: 15px; 
+}
+
+.product-card img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-card .title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.product-card .price {
+  color: #0066cc;
+  font-weight: bold;
+}
+
+.shopping-cart {
+  background-color: #fef3c7;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 30px auto;
+  max-width: 700px;
+  text-align: center;
+}
+
+.shopping-cart h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.cart-message .empty {
+  font-size: 28px;
+  color: #444;
+  font-weight: 300;
+}
+
+.cart-message .subtext {
+  color: #888;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.cart-icon {
+  font-size: 20px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.cart-details {
+  text-align: left;
+}
+
+.cart-items {
+  margin-top: 20px;
+}
+
+.cart-item {
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 12px; 
+}
+
+.cart-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.cart-item .quantity-controls {
+  margin-top: 5px;
+  display: flex;
+  gap: 10px;
+}
+
+.cart-item .decrease,
+.cart-item .increase {
+  background-color: #464544;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#productModal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#productModal .modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.product-item {
+  margin: 15px;
+  text-align: center;
+  cursor: pointer;
+}

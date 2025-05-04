@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Jade's Pawfect Care</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+   rel="stylesheet" />
+  <link rel="stylesheet" href="addtocart.css">
+  <link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+  <header>
+    <h1>Jade's Pawfect Care</h1>
+    <nav>
+        <ul>
+          <li><a href="index2.html"><button>Home</button></a></li>
+          <li><a href="contactus.html"><button>Contact</button></a></li>
+          <li><a href="about.html"><button>About Us</button></a></li>
+          <li><a href= "addtocart.html" ><button>Cart</button></a></li>
+          <li><button onclick="logout()">Log Out</button></li>
+        </ul>
+    </nav>
+</header>
+
+  <main>
+    <section class="bestsellers">
+      <h2>Bestsellers of the Week!</h2>
+      <div class="products">
+        <div class="product-card" draggable="true" data-price="2300" data-img="Screenshot 2025-04-09 010206.png">
+          <img src="Screenshot 2025-04-09 010206.png" alt="Happy Pet" />
+          <p class="title">Happy Pet Puppy Beef Recipe (20kg)</p>
+          <p class="price">₱ 2,300.00</p>
+        </div>
+        <div class="product-card" draggable="true" data-price="300" data-img="Screenshot 2025-04-09 010236.png">
+          <img src="Screenshot 2025-04-09 010236.png" alt="Pedigree" />
+          <p class="title">Pedigree Bones Chewy Dog Treats (50g)</p>
+          <p class="price">₱ 300.00</p>
+        </div>
+        <div class="product-card" draggable="true" data-price="450" data-img="Screenshot 2025-04-09 010248.png">
+          <img src="Screenshot 2025-04-09 010248.png" alt="Costume" />
+          <p class="title">Spider-man Costume (Small Fit)</p>
+          <p class="price">₱ 450.00</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="shopping-cart" id="shopping-cart">
+      <div class="flex justify-between items-center">
+        <h3>Shopping Cart </h3>
+        <img src="icons8-plus-24.png" alt="Show products" class="cursor-pointer" id="showProductsBtn" />
+      </div>
+      <div class="cart-message">
+        <p class="empty">Your cart is empty.</p>
+        <p class="subtext">Drag / Add items now!</p>
+      </div>
+      <div class="cart-details hidden">
+        <div class="cart-items"></div>
+        <div class="cart-summary">
+          <p>Amount of Products: <span id="total-quantity">0</span></p>
+          <p>Total: <span id="total-price">₱ 0.00</span></p>
+          <p><a href="checkout.html"><button class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded">
+                Checkout/Payment</button></a></p>
+        </div>
+      </div>
+    </section>
+
+    <div id="product-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+      <div class="bg-white rounded-lg p-4 max-w-md w-full">
+        <h2 class="text-xl font-bold mb-4">Available Products</h2>
+        <div class="product-list grid grid-cols-2 gap-4"></div>
+        <button id="closeModal" class="mt-4 bg-yellow-500 text-white px-4 py-2 rounded">Close</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="addtocart.js"></script>
+  <script>
+    function logout() {
+      const confirmLogout = confirm("Are you sure you want to log out?");
+      if (confirmLogout) {
+        window.location.href = "index.html"; 
+      }
+    }
+  </script>
+  
+</body>
+</html>
